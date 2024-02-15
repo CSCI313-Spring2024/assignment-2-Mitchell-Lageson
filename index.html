@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            .content:target {
+                display: block;
+            }
+            .content {
+                display: none;
+            }
+            .content:target {
+                display: block;
+            }
+            h1 {
+                text-indent: 50px;
+            }
+            h2 {
+                text-indent: 50px;
+            }
+            p {
+                text-indent: 100px;
+            }
+            #Schedule {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #Schedule td, #Schedule th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #Schedule tr:nth-child(even){background-color: #f2f2f2;}
+
+            #Schedule tr:hover {background-color: #ddd;}
+
+            #Schedule th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: #04AA6D;
+                color: white;
+            }
+            ul {
+                margin-left: 100px;
+            }
+            ol {
+                margin-left: 100px;
+            }
+            footer {
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            }
+        </style>
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <body style="background-color: rgb(217, 245, 217);">
+        <nav style="background-color:MediumSeaGreen;" class="navbar navbar-expand-sm g-light">
+            <div class="container-fluid">
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content1">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content2">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content3">Favorite Things</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content" id="content1">
+            <h1>About Me</h1>
+            <h2>Here are some fun things about me!</h2>
+            <p>Name: Mitchell Lageson</p>
+            <p>Major: Computer Science</p>
+            <p>Biograhpy: I am an avid computer enthusist. I specialise in computer repair.</p>
+            <p>I have been enjoying my studies as a computer science and look forward to geting into the work force!</p>
+        </div>
+
+        <div class="content" id="content2">
+            <h1>Weekly Schedule</h1>
+            <h2>Below is a table of my weekly Schedule:</h2>
+            <table id="Schedule">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <th>8am - 8:50am Calc 2</th>
+                    <th></th>
+                    <th>8am - 8:50am Calc 2</th>
+                    <th></th>
+                    <th>8am - 8:50am Calc 2</th>
+                </tr>
+                <tr>
+                    <th>10am - 10:50am CSCI 313</th>
+                    <th></th>
+                    <th>10am - 10:50am CSCI 313</th>
+                    <th></th>
+                    <th>10am - 10:50am CSCI 313</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>11am - 11:50am Calc 2</th>
+                    <th></th>
+                    <th>11am - 11:50am Calc 2</th>
+                    <th></th>
+                </tr>
+                
+                <tr>
+                    <th>1pm - 1:50pm CSCI 374</th>
+                    <th>12:30pm - 1:45pm CSCI 336</th>
+                    <th>1pm - 1:50pm CSCI 374</th>
+                    <th>12:30pm - 1:45pm CSCI 336</th>
+                    <th>1pm - 1:50pm CSCI 374</th>
+                </tr>
+                <tr>
+                    <th>2pm - 5:30pm Work</th>
+                    <th>3pm - 6:30pm Work</th>
+                    <th>2pm - 7pm Work</th>
+                    <th>2:30pm - 6:30pm Work</th>
+                    <th>2pm - 6pm Work</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content" id="content3">
+            <h1>Favorite Things</h1>
+            <h2>here is a list of my favorite things!</h2>
+            <p>Favorite Sites:</p>
+            <p><b><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" target="_blank">Youtube</a></b></p>
+            <p><b><a href="https://mnvl.leaguespot.gg/organizations/e371e4b1-beed-4203-b1f9-35bc6067ec2e" target="_blank">MNVL</a></b></p>
+            <p><b><a href="https://discord.com/" target="_blank">Discord</a></b></p>
+            <p>Favorite Movies:</p>
+            <ul>
+                <li>The Architect</li>
+                <li>The Emoji Movie</li>
+                <li>Velociraptor</li>
+            </ul>
+            <ol>
+                <li>Computer Repair</li>
+                <li>Esports Coach</li>
+                <li>Hikeing</li>
+            </ol>
+        </div>
+        <footer style="background-color:MediumSeaGreen;">
+            <p>Mitchell Lageson Assignment 2 CSCI 313</p>
+        </footer>
+    </body>
+</html>
+
